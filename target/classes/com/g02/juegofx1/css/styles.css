@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 
+/* Interfaz inicio */
+
 .container {
     -fx-pref-width: 1280;
     -fx-pref-height: 720;
@@ -31,4 +33,42 @@
     -fx-font-size: 50px;
     -fx-line-height: 60px;
     -fx-text-fill: #000000;
+}
+
+/* Interfaz instrucciones */
+
+.container2 {
+    -fx-pref-width: 1280;
+    -fx-pref-height: 720;
+    -fx-background-image: url("../imgs/Fondo2.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-alignment: center;
+    -fx-spacing: 50;
+    -fx-padding: 50px;
+}
+
+.custom-button-instruction {
+    -fx-pref-width: 80px;
+    -fx-pref-height: 80px;
+    -fx-left: 76px;
+    -fx-top: 575px;
+    -fx-background-color: linear-gradient(to bottom, #F2B705 4.71%, rgba(242, 226, 5, 0.54) 49.48%, #F29F05 100%);
+    -fx-background-radius: 100px;
+    -fx-graphic: url("../imgs/arrow-backward.png");
+    -fx-margin: 200px;
+}
+
+
+.text-instruction {
+    -fx-translate-x: 229px;
+    -fx-translate-y: 50px;
+    -fx-text-fill: #000000;
+    -fx-font-size: 20px;
+    -fx-line-height: 50px;
+    -fx-alignment: left;
+}
+
+.element-container {
+    margin: 20px;
 }
