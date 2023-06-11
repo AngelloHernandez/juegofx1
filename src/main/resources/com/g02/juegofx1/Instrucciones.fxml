@@ -25,7 +25,7 @@
     </center>
     <bottom>
         <HBox alignment="BOTTOM_LEFT" styleClass="element-container">
-            <Button fx:id="Button_Click2" onAction="#onButtonClick" styleClass="custom-button-instruction" />
+            <Button fx:id="Button_Click2" onAction="#click_volver" styleClass="custom-button-instruction" />
         </HBox>
     </bottom>
 </BorderPane>

@@ -4,6 +4,7 @@
  */
 package com.g02.juegofx1;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -30,7 +31,8 @@ public class InicioController implements Initializable {
     }
 
     @FXML
-    private void click_instrucciones(ActionEvent event) {
+    private void click_instrucciones() throws IOException {
+        App.setRoot("Instrucciones");
     }
     
 }
