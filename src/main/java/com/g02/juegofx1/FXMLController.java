@@ -4,11 +4,8 @@
  */
 package com.g02.juegofx1;
 
-import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 
 /**
@@ -16,7 +13,7 @@ import javafx.fxml.Initializable;
  *
  * @author Usuario
  */
-public class InicioController implements Initializable {
+public class FXMLController implements Initializable {
 
     /**
      * Initializes the controller class.
@@ -25,15 +22,5 @@ public class InicioController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
-
-    @FXML
-    private void click_comenzar(ActionEvent event) throws IOException {
-        App.setRoot("Registro");
-    }
-
-    @FXML
-    private void click_instrucciones() throws IOException {
-        App.setRoot("Instrucciones");
-    }
     
 }
