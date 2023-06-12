@@ -7,7 +7,7 @@ com\g02\juegofx1\InicioController.class
 com\g02\juegofx1\FXMLController.class
 com\g02\juegofx1\FinalController.class
 com\g02\juegofx1\SecondaryController.class
-com\g02\juegofx1\Answer.class
 com\g02\juegofx1\PreguntasController.class
+com\g02\juegofx1\Quiz.class
 com\g02\juegofx1\RegistroController.class
 com\g02\juegofx1\PrimaryController.class

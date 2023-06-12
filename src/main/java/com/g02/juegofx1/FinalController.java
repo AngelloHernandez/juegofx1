@@ -21,6 +21,10 @@ public class FinalController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+        System.out.println("Nombre: "+App.user.get_user_name());
+        System.out.println("Correctas: "+App.user.get_right_questions());
+        System.out.println("Incorrectas: "+App.user.get_failed_questions());
+        System.out.println("Puntaje :"+App.user.get_score());
     }    
     
 }
