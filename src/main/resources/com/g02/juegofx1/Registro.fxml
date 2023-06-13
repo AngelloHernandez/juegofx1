@@ -9,6 +9,6 @@
       <Button fx:id="btn_register" layoutX="810.0" layoutY="461.0" mnemonicParsing="false" onAction="#iniciar_juego" prefHeight="94.0" prefWidth="331.0" styleClass="button-register" text="Estoy Listo" />
       <Label layoutX="324.0" layoutY="-26.0" prefHeight="268.0" prefWidth="632.0" styleClass="title-register" stylesheets="@css/styles.css" text="EL RETO DEL GENIO" textAlignment="CENTER" wrapText="true" />
       <Label layoutX="137.0" layoutY="270.0" prefHeight="50.0" prefWidth="277.0" styleClass="copy-genius" stylesheets="@css/styles.css" text="Escribe tu nombre y dale al botón amarillo" textAlignment="CENTER" wrapText="true" />
-      <Pane layoutX="177.0" layoutY="326.0" prefHeight="320.0" prefWidth="210.0" styleClass="genius" stylesheets="@css/styles.css" />
+      <Pane layoutX="177.0" layoutY="326.0" prefHeight="320.0" prefWidth="210.0" styleClass="genius-register" stylesheets="@css/styles.css" />
    </children>
 </AnchorPane>
