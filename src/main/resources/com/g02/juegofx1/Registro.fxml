@@ -2,13 +2,13 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="container-register" stylesheets="@css/styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.g02.juegofx1.RegistroController">
    <children>
-      <TextField fx:id="inputName" alignment="CENTER" layoutX="347.0" layoutY="200.0" promptText="Nombre del jugador" />
-      <Button layoutX="393.0" layoutY="245.0" mnemonicParsing="false" onAction="#iniciar_juego" text="Estoy listo" />
-      <Text layoutX="61.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Escribe tu nombre y dale al botón amarillo" textAlignment="CENTER" wrappingWidth="136.0" />
-      <Label layoutX="260.0" layoutY="33.0" prefHeight="46.0" prefWidth="81.0" stylesheets="@css/styles.css" text="EL RETO DEL GENIO" textAlignment="CENTER" wrapText="true" />
+      <TextField fx:id="inputName" alignment="CENTER" layoutX="710.0" layoutY="360.0" promptText="Nombre del jugador" styleClass="input-register" stylesheets="@css/styles.css" />
+      <Button fx:id="btn_register" layoutX="810.0" layoutY="461.0" mnemonicParsing="false" onAction="#iniciar_juego" prefHeight="94.0" prefWidth="331.0" styleClass="button-register" text="Estoy Listo" />
+      <Label layoutX="324.0" layoutY="-26.0" prefHeight="268.0" prefWidth="632.0" styleClass="title-register" stylesheets="@css/styles.css" text="EL RETO DEL GENIO" textAlignment="CENTER" wrapText="true" />
+      <Label layoutX="137.0" layoutY="270.0" prefHeight="50.0" prefWidth="277.0" styleClass="copy-genius" stylesheets="@css/styles.css" text="Escribe tu nombre y dale al botón amarillo" textAlignment="CENTER" wrapText="true" />
+      <Pane layoutX="177.0" layoutY="326.0" prefHeight="320.0" prefWidth="210.0" styleClass="genius" stylesheets="@css/styles.css" />
    </children>
 </AnchorPane>
