@@ -109,6 +109,7 @@
 }
 
 .input-register{
+    -fx-font-family: 'Roboto', sans-serif;
     -fx-pref-width: 400px;
     -fx-pref-height: 60px;
     -fx-background-radius: 15px;
@@ -121,12 +122,13 @@
 }
 
 .copy-genius{
+    -fx-font-family: 'Roboto', sans-serif;
     -fx-pref-width: 330px;
     -fx-pref-height: 90px;
     -fx-background-color: rgba(190, 185, 185, 0.5);
     -fx-background-radius: 50px;
     -fx-border-color: rgba(0, 0, 0, 1);
-    -fx-border-width: 3px;
+    -fx-border-width: 2px;
     -fx-border-radius: 50%;
     -fx-font-size: 20px;
 }
@@ -165,12 +167,14 @@
     -fx-pref-height: 60px;
     -fx-background-color: rgba(232, 170, 66, 1);
     -fx-background-radius: 5%;
-    -fx-border-width: 2px;
+    -fx-border-width: 3px;
     -fx-border-color: rgba(0, 0, 0, 1);
     -fx-border-radius: 1%;
 }
 
 .score-text{
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-text-fill: #000000;
     -fx-font-weight: 100;
     -fx-font-size: 20px;
 }
@@ -179,24 +183,27 @@
     -fx-pref-width: 500px;
     -fx-pref-height: 480px;
     -fx-background-color: rgba(232, 170, 66, 0.5);
-    -fx-background-radius: 5%;
-    -fx-border-width: 2px;
+    -fx-background-radius: 3%;
+    -fx-border-width: 3px;
     -fx-border-color: rgba(0, 0, 0, 1);
     -fx-border-radius: 3%;
 }
 
 .num-question{
-    -fx-font-size: 18px;
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-size: 20px;
     -fx-font-weight: 400;
 }
 
 .question{
-    -fx-font-size: 18px;
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-size: 20px;
 }
 
 .answers{
+    -fx-font-family: 'Roboto', sans-serif;
     -fx-pref-width: 450px;
-    -fx-font-size: 18px;
+    -fx-font-size: 20px;
     -fx-font-weight: 400;
     -fx-background-color: linear-gradient(to bottom, #F2B705 4.71%, rgba(242, 226, 5, 0.54) 49.48%, #F29F05 100%);
     -fx-background-radius: 50px;
@@ -206,4 +213,115 @@
     -fx-prefer-width: 500px;
     -fx-prefer-height: 500px;
     -fx-background-image: url("../imgs/GenioPreguntas.png");
+}
+
+
+/* Interfaz de Puntaje Final */
+
+.container-results{
+    -fx-pref-width: 1280;
+    -fx-pref-height: 720;
+    -fx-background-image: url("../imgs/Fondo3.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-alignment: center;
+    -fx-spacing: 20;
+}
+
+.title-results{
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-weight: 400;
+    -fx-font-size: 50px;
+    -fx-line-height: 80px;
+    -fx-text-fill: #000000;
+    -fx-wrap-text: true;
+    -fx-text-alignment: center;
+}
+
+.genius-results{
+    -fx-prefer-width: 500px;
+    -fx-prefer-height: 500px;
+    -fx-background-image: url("../imgs/GenioPuntaje_Incorrecto.png");
+}
+
+.copy-genius-results{
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-pref-width: 280px;
+    -fx-pref-height: 90px;
+    -fx-background-color: rgba(190, 185, 185, 0.5);
+    -fx-background-radius: 50px;
+    -fx-border-color: rgba(0, 0, 0, 1);
+    -fx-border-width: 2px;
+    -fx-border-radius: 50%;
+    -fx-font-size: 20px;
+}
+
+.button-results{
+    -fx-pref-width: 210px;
+    -fx-pref-height: 50px;
+    -fx-background-color: linear-gradient(to bottom, #F2B705 4.71%, rgba(242, 226, 5, 0.54) 49.48%, #F29F05 100%);
+    -fx-background-radius: 50px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 0px, 0px, 4px, 4px);
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-weight: 100;
+    -fx-font-size: 22px;
+    -fx-line-height: 60px;
+    -fx-text-fill: #000000;
+}
+
+.score-text-results{
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-text-fill: #000000;
+    -fx-font-weight: 100;
+    -fx-font-size: 20px;
+}
+
+.background-results{
+    -fx-pref-width: 500px;
+    -fx-pref-height: 480px;
+    -fx-background-color: rgba(232, 170, 66, 1);
+    -fx-background-radius: 8%;
+    -fx-border-width: 3px;
+    -fx-border-color: #000000;
+    -fx-border-radius: 8%;
+}
+
+.results-text{
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-weight: 400;
+    -fx-font-size: 40px;
+    -fx-line-height: 80px;
+    -fx-text-fill: #000000;
+    -fx-wrap-text: true;
+    -fx-text-alignment: center;
+}
+
+.results-total-questions{
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-weight: 400;
+    -fx-font-size: 45px;
+    -fx-line-height: 80px;
+    -fx-text-fill: #000000;
+    -fx-wrap-text: true;
+    -fx-text-alignment: center;
+}
+
+.results-corrects{
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-weight: 400;
+    -fx-font-size: 30px;
+    -fx-line-height: 80px;
+    -fx-text-fill: #000000;
+    -fx-wrap-text: true;
+    -fx-text-alignment: center;
+}
+
+.results-num{
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-weight: 400;
+    -fx-font-size: 45px;
+    -fx-line-height: 80px;
+    -fx-text-fill: #000000;
+    -fx-wrap-text: true;
+    -fx-text-alignment: center;
 }
