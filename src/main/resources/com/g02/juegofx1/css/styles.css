@@ -72,3 +72,20 @@
 .element-container {
     margin: 20px;
 }
+
+/* Interfaz de Registro */
+
+.title-register{
+    -fx-font-size: 20px;
+    -fx-line-height: 40px;
+}
+
+.container-register{
+    -fx-pref-width: 1280;
+    -fx-pref-height: 720;
+    -fx-background-image: url("../imgs/Fondo3.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-alignment: center;
+    -fx-spacing: 20;
+}
