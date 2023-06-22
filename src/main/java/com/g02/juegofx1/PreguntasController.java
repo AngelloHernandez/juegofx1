@@ -23,7 +23,7 @@ public class PreguntasController implements Initializable {
 
     private static List<Question> currQuiz;
     private static Question currQuestion;
-    private static Integer globalIndex = 0;
+    private Integer globalIndex = 0;
     @FXML
     private Label nombreJugador;
     @FXML
