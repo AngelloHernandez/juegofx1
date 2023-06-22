@@ -104,12 +104,12 @@ public class Quiz {
         Question question8 = new Question();
         question8.set_question("¿En qué año finalizó la II Guerra Mundial?");
         List<String> answers8 = new ArrayList<>();
-        answers8.add("1945");
+        answers8.add("1954");
         answers8.add("1945");
         answers8.add("1964");
         answers8.add("1918");
         question8.set_answers(answers8);
-        question8.set_right(0);
+        question8.set_right(1);
         quiz.add(question8);
 
         //Pregunta 9
