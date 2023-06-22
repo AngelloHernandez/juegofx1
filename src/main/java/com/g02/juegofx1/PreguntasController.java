@@ -114,7 +114,6 @@ public class PreguntasController implements Initializable {
 
         if (index < currQuiz.size()) {
             globalIndex = (globalIndex + 1);
-            System.out.println(globalIndex);
             currQuestion = currQuiz.get(index);
             NumPregunta.setText("PREGUNTA #"+globalIndex);
             nombreJugador.setText(App.user.get_user_name());
