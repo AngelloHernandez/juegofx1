@@ -45,6 +45,13 @@ public class User {
     public Integer get_failed_questions(){
         return failedQuestions;
     }
+
+    public void clear_user(){
+        name = "";
+        score = 0;
+        rightQuestions = 0;
+        failedQuestions = 0;
+    }
 }
     
 

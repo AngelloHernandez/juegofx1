@@ -56,10 +56,12 @@ public class FinalController implements Initializable {
     @FXML
     private void click_nuevo_intento(ActionEvent event) throws IOException{
         App.setRoot("Registro");
+        App.user.clear_user();
     }
 
     @FXML
     private void click_salir(ActionEvent event) throws IOException{
         App.setRoot("Inicio");
+        App.user.clear_user();
     }
 }
