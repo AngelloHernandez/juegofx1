@@ -80,7 +80,7 @@ public class UtilidadPopUps {
 
         // Mostrar el popup
         Scene popupScene = new Scene(popupRoot);
-
+        popupScene.setFill(Color.TRANSPARENT);
         popupStage.setScene(popupScene);
         popupStage.show();
 

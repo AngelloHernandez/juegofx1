@@ -333,4 +333,6 @@
     -fx-pref-width: 700;
     -fx-pref-height: 400;
     -fx-background: #E8AA42;
+    -fx-background-radius: 20;
+    -fx-alignment: center;
 }
