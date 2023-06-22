@@ -49,67 +49,79 @@ public class PreguntasController implements Initializable {
         quiz.initialize_quiz();
         currQuiz = quiz.get_quiz();
         next_question(globalIndex);
-    }    
+    }
 
     @FXML
-    private void click_respuesta_1(ActionEvent event) {
-        if(currQuestion.validate_right(0)){
+    private void click_respuesta_1(ActionEvent event) throws IOException {
+        if (currQuestion.validate_right(0)) {
             App.user.update_score(100);
             App.user.add_right_question();
-        }else{
+            UtilidadPopUps.showCorrectPopup();
+        } else {
             App.user.add_failed_question();
+            UtilidadPopUps.showIncorrectPopup();
         }
         next_question(globalIndex);
     }
 
     @FXML
-    private void click_respuesta_2(ActionEvent event) {
-        if(currQuestion.validate_right(1)){
+    private void click_respuesta_2(ActionEvent event) throws IOException {
+        if (currQuestion.validate_right(1)) {
             App.user.update_score(100);
             App.user.add_right_question();
-        }else{
+            UtilidadPopUps.showCorrectPopup();
+
+        } else {
             App.user.add_failed_question();
+            UtilidadPopUps.showIncorrectPopup();
+
         }
         next_question(globalIndex);
     }
 
     @FXML
-    private void click_respuesta_3(ActionEvent event) {
-        if(currQuestion.validate_right(2)){
+    private void click_respuesta_3(ActionEvent event) throws IOException {
+        if (currQuestion.validate_right(2)) {
             App.user.update_score(100);
             App.user.add_right_question();
-        }else{
+            UtilidadPopUps.showCorrectPopup();
+        } else {
             App.user.add_failed_question();
+            UtilidadPopUps.showIncorrectPopup();
+
         }
         next_question(globalIndex);
     }
 
     @FXML
-    private void click_respuesta_4(ActionEvent event) {
-        if(currQuestion.validate_right(3)){
+    private void click_respuesta_4(ActionEvent event) throws IOException {
+        if (currQuestion.validate_right(3)) {
             App.user.update_score(100);
             App.user.add_right_question();
-        }else{
+            UtilidadPopUps.showCorrectPopup();
+        } else {
             App.user.add_failed_question();
+            UtilidadPopUps.showIncorrectPopup();
+
         }
         next_question(globalIndex);
-    
+
     }
-    
-    private void next_question(Integer index){
-        
-        if(index<currQuiz.size()){
-            globalIndex = (globalIndex+1);
+
+    private void next_question(Integer index) {
+
+        if (index < currQuiz.size()) {
+            globalIndex = (globalIndex + 1);
             System.out.println(globalIndex);
             currQuestion = currQuiz.get(index);
             nombreJugador.setText(App.user.get_user_name());
-            puntosJugador.setText(App.user.get_score()+" Puntos");
+            puntosJugador.setText(App.user.get_score() + " Puntos");
             preguntaJugador.setText(currQuestion.get_question());
             respuesta_1.setText(currQuestion.get_answers().get(0));
             respuesta_2.setText(currQuestion.get_answers().get(1));
             respuesta_3.setText(currQuestion.get_answers().get(2));
             respuesta_4.setText(currQuestion.get_answers().get(3));
-        }else{
+        } else {
             try {
                 App.setRoot("Final");
             } catch (IOException ex) {
@@ -117,5 +129,5 @@ public class PreguntasController implements Initializable {
             }
         }
     }
-    
+
 }
