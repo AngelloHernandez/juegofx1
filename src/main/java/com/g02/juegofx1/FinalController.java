@@ -4,8 +4,11 @@
  */
 package com.g02.juegofx1;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
@@ -48,6 +51,15 @@ public class FinalController implements Initializable {
         preguntasIncorrectas.setText(""+Incorrectas);
         puntosJugadorParcial.setText(finalScore + " Pts");
         puntosJugadorTotal.setText(finalScore + " Pts");
-    }    
-    
+    }
+
+    @FXML
+    private void click_nuevo_intento(ActionEvent event) throws IOException{
+        App.setRoot("Registro");
+    }
+
+    @FXML
+    private void click_salir(ActionEvent event) throws IOException{
+        App.setRoot("Inicio");
+    }
 }

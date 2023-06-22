@@ -27,7 +27,7 @@ public class UtilidadPopUps {
         popupStage.show();
 
         // Cerrar la ventana emergente después de un corto tiempo
-        PauseTransition delay = new PauseTransition(Duration.seconds(2));
+        PauseTransition delay = new PauseTransition(Duration.seconds(1));
         delay.setOnFinished(event -> {
             popupStage.close();
         });
@@ -50,7 +50,7 @@ public class UtilidadPopUps {
         popupStage.show();
 
         // Cerrar la ventana emergente después de un corto tiempo
-        PauseTransition delay = new PauseTransition(Duration.seconds(2));
+        PauseTransition delay = new PauseTransition(Duration.seconds(1));
         delay.setOnFinished(event -> {
             popupStage.close();
         });
