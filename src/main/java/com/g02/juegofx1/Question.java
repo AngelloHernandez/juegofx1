@@ -4,7 +4,6 @@
  */
 package com.g02.juegofx1;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
@@ -14,31 +13,31 @@ import java.util.Objects;
  */
 public class Question {
     
-    private static String question;
-    private static List<String> answers;
-    private static Integer rightAnswer;
+    private String question;
+    private List<String> answers;
+    private Integer rightAnswer;
     
     public void set_question(String newQuestion){
-        question = newQuestion;
+        this.question = newQuestion;
     }
     
     public String get_question(){
-        return question;
+        return this.question;
     }
     
     public void set_answers(List<String> newAnswers){
-        answers = newAnswers;
+        this.answers = newAnswers;
     }
     
     public List<String> get_answers(){
-        return answers;
+        return this.answers;
     }
     
     public void set_right(Integer index){
-        rightAnswer = index;
+        this.rightAnswer = index;
     }
     public Boolean validate_right(Integer index){
-        return Objects.equals(index, rightAnswer);
+        return Objects.equals(index, this.rightAnswer);
     }
     
 }

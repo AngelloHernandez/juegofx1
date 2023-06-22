@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="container-results" stylesheets="@css/styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.g02.juegofx1.FinalController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="container-results" stylesheets="@css/styles.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.g02.juegofx1.FinalController">
    <children>
       <Pane layoutX="683.0" layoutY="45.0" prefHeight="200.0" prefWidth="200.0" styleClass="background-score" stylesheets="@css/styles.css">
          <children>
@@ -14,15 +16,15 @@
       <Pane layoutX="683.0" layoutY="138.0" prefHeight="200.0" prefWidth="200.0" styleClass="background-results" stylesheets="@css/styles.css">
          <children>
             <Label layoutX="73.0" layoutY="14.0" styleClass="results-text" stylesheets="@css/styles.css" text="TOTAL PREGUNTAS" textAlignment="CENTER" />
-            <Label layoutX="228.0" layoutY="78.0" styleClass="results-total-questions" stylesheets="@css/styles.css" text="10" />
-            <Label layoutX="30.0" layoutY="199.0" styleClass="results-num" stylesheets="@css/styles.css" text="6" />
+            <Label fx:id="totalPreguntas" layoutX="228.0" layoutY="78.0" styleClass="results-total-questions" stylesheets="@css/styles.css" text="10" />
+            <Label fx:id="preguntasCorrectas" layoutX="30.0" layoutY="199.0" styleClass="results-num" stylesheets="@css/styles.css" text="6" />
             <Label layoutX="74.0" layoutY="207.0" styleClass="results-corrects" stylesheets="@css/styles.css" text="Correctas:" />
-            <Label fx:id="puntosJugador" layoutX="316.0" layoutY="199.0" styleClass="results-num" stylesheets="@css/styles.css" text="600 Pts" />
-            <Label layoutX="30.0" layoutY="278.0" styleClass="results-num" stylesheets="@css/styles.css" text="4" />
+            <Label fx:id="puntosJugadorParcial" layoutX="316.0" layoutY="199.0" styleClass="results-num" stylesheets="@css/styles.css" text="600 Pts" />
+            <Label fx:id="preguntasIncorrectas" layoutX="30.0" layoutY="278.0" styleClass="results-num" stylesheets="@css/styles.css" text="4" />
             <Label layoutX="74.0" layoutY="286.0" styleClass="results-corrects" stylesheets="@css/styles.css" text="Incorrectas:" />
             <Label layoutX="341.0" layoutY="278.0" styleClass="results-num" stylesheets="@css/styles.css" text="0 Pts" />
             <Label layoutX="74.0" layoutY="396.0" styleClass="results-corrects" stylesheets="@css/styles.css" text="Total:" />
-            <Label fx:id="puntosJugador" layoutX="316.0" layoutY="388.0" styleClass="results-num" stylesheets="@css/styles.css" text="600 Pts" />
+            <Label fx:id="puntosJugadorTotal" layoutX="316.0" layoutY="388.0" styleClass="results-num" stylesheets="@css/styles.css" text="600 Pts" />
          </children></Pane>
       <Label layoutX="173.0" layoutY="179.0" prefWidth="271.0" styleClass="copy-genius-results" stylesheets="@css/styles.css" text="!Buen Trabajo! Aqui está tu resumen" textAlignment="CENTER" wrapText="true" />
       <Button layoutX="51.0" layoutY="581.0" mnemonicParsing="false" prefWidth="233.0" styleClass="button-results" stylesheets="@css/styles.css" text="Intentar de Nuevo" />

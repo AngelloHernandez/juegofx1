@@ -21,8 +21,8 @@ import javafx.scene.control.Label;
  */
 public class PreguntasController implements Initializable {
 
-    private static List<Question> currQuiz;
-    private static Question currQuestion;
+    private List<Question> currQuiz;
+    private Question currQuestion;
     private Integer globalIndex = 0;
     @FXML
     private Label nombreJugador;
@@ -38,6 +38,8 @@ public class PreguntasController implements Initializable {
     private Button respuesta_3;
     @FXML
     private Button respuesta_4;
+    @FXML
+    private Label NumPregunta;
 
     /**
      * Initializes the controller class.
@@ -114,6 +116,7 @@ public class PreguntasController implements Initializable {
             globalIndex = (globalIndex + 1);
             System.out.println(globalIndex);
             currQuestion = currQuiz.get(index);
+            NumPregunta.setText("PREGUNTA #"+globalIndex);
             nombreJugador.setText(App.user.get_user_name());
             puntosJugador.setText(App.user.get_score() + " Puntos");
             preguntaJugador.setText(currQuestion.get_question());

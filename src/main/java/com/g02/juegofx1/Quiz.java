@@ -13,7 +13,7 @@ import java.util.List;
  * @author Usuario
  */
 public class Quiz {
-    private static List<Question> quiz = new ArrayList<>();
+    private List<Question> quiz = new ArrayList<>();
     
     public void initialize_quiz(){
         //Pregunta 1

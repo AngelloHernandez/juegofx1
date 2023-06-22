@@ -6,7 +6,9 @@ package com.g02.juegofx1;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
 
 /**
  * FXML Controller class
@@ -15,16 +17,37 @@ import javafx.fxml.Initializable;
  */
 public class FinalController implements Initializable {
 
+    @FXML
+    private Label nombreJugador;
+    @FXML
+    private Label puntosJugador;
+    @FXML
+    private Label totalPreguntas;
+    @FXML
+    private Label preguntasCorrectas;
+    @FXML
+    private Label puntosJugadorParcial;
+    @FXML
+    private Label preguntasIncorrectas;
+    @FXML
+    private Label puntosJugadorTotal;
+
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-        System.out.println("Nombre: "+App.user.get_user_name());
-        System.out.println("Correctas: "+App.user.get_right_questions());
-        System.out.println("Incorrectas: "+App.user.get_failed_questions());
-        System.out.println("Puntaje :"+App.user.get_score());
+        Integer finalScore = App.user.get_score();
+        Integer Correctas = App.user.get_right_questions();
+        Integer Incorrectas = App.user.get_failed_questions();
+        nombreJugador.setText(App.user.get_user_name());
+        puntosJugador.setText( finalScore + " Puntos");
+        totalPreguntas.setText(""+(Correctas+Incorrectas));
+        preguntasCorrectas.setText(""+Correctas);
+        preguntasIncorrectas.setText(""+Incorrectas);
+        puntosJugadorParcial.setText(finalScore + " Pts");
+        puntosJugadorTotal.setText(finalScore + " Pts");
     }    
     
 }
