@@ -10,7 +10,10 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
+import javafx.scene.control.ToggleGroup;
 
 /**
  * FXML Controller class
@@ -21,6 +24,14 @@ public class RegistroController implements Initializable {
 
     @FXML
     private TextField inputName;
+    @FXML
+    private ToggleGroup toggleDifGroup;
+    @FXML
+    private RadioButton aprendizToggle;
+    @FXML
+    private RadioButton academicoToggle;
+    @FXML
+    private RadioButton genioToggle;
     /**
      * Initializes the controller class.
      */
@@ -32,6 +43,10 @@ public class RegistroController implements Initializable {
     @FXML
     private void iniciar_juego(ActionEvent event) throws IOException {
         if (inputName != null) {
+            aprendizToggle.setUserData("Aprendiz");
+            academicoToggle.setUserData("Académico");
+            genioToggle.setUserData("Genio");
+            App.user.set_difficulty(toggleDifGroup.getSelectedToggle().getUserData().toString());
             String texto = inputName.getText();
             App.user.set_user_name(texto);
             System.out.println("Nombre del usuario: " + App.user.get_user_name());

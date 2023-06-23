@@ -13,6 +13,27 @@ public class User {
     private static Integer score = 0;
     private static Integer rightQuestions = 0;
     private static Integer failedQuestions = 0;
+    private static Integer Difficulty = 0;
+    
+    public void set_difficulty(String difficulty){
+        switch(difficulty){
+            case "Aprendiz":
+                Difficulty = 10;
+                break;
+            case "Académico":
+                Difficulty = 20;
+                break;
+            case "Genio":
+                Difficulty = 30;
+                break;
+            default:
+                Difficulty = 10;
+        }
+    }
+    
+    public Integer get_difficulty(){
+        return Difficulty;
+    }
     
     public void set_user_name(String newName){
         name = newName;
@@ -51,6 +72,7 @@ public class User {
         score = 0;
         rightQuestions = 0;
         failedQuestions = 0;
+        Difficulty = 0;
     }
 }
     

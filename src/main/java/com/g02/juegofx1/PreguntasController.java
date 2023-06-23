@@ -115,7 +115,7 @@ public class PreguntasController implements Initializable {
         if (index < currQuiz.size()) {
             globalIndex = (globalIndex + 1);
             currQuestion = currQuiz.get(index);
-            NumPregunta.setText("PREGUNTA #"+globalIndex);
+            NumPregunta.setText("PREGUNTA #"+globalIndex+"/"+App.user.get_difficulty());
             nombreJugador.setText(App.user.get_user_name());
             puntosJugador.setText(App.user.get_score() + " Puntos");
             preguntaJugador.setText(currQuestion.get_question());

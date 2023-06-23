@@ -379,7 +379,13 @@ public class Quiz {
     
     public List<Question> get_quiz(){
         Collections.shuffle(quiz);
-        return quiz;
+        List<Question> outQuiz = new ArrayList<>();
+        Integer maxQuestions = App.user.get_difficulty();
+        for(int i = 0; i < maxQuestions; i++) {
+            outQuiz.add(quiz.get(i));
+        }
+        quiz = new ArrayList<>();
+        return outQuiz;
     }
             
     
