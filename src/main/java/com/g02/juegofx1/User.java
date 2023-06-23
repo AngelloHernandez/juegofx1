@@ -21,10 +21,10 @@ public class User {
                 Difficulty = 10;
                 break;
             case "Académico":
-                Difficulty = 20;
+                Difficulty = 15;
                 break;
             case "Genio":
-                Difficulty = 30;
+                Difficulty = 20;
                 break;
             default:
                 Difficulty = 10;
