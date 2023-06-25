@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<BorderPane id="BorderPane" styleClass="container2" stylesheets="@../css/styles.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.g02.juegofx1.InstruccionesController" >
+<BorderPane id="BorderPane" styleClass="container2" stylesheets="@../css/styles.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.g02.juegofx1.controller.InstruccionesController" >
     <top>
         <HBox alignment="TOP_RIGHT" styleClass="element-container">
             <Label fx:id="Label_interfaz2" styleClass="title" text="Instrucciones"/>

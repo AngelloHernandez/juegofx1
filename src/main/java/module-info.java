@@ -5,4 +5,7 @@ module com.g02.juegofx1 {
 
     opens com.g02.juegofx1 to javafx.fxml;
     exports com.g02.juegofx1;
+
+    opens com.g02.juegofx1.controller to javafx.fxml;
+    exports com.g02.juegofx1.controller;
 }
