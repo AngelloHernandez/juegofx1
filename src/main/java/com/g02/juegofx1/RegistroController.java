@@ -20,7 +20,7 @@ import javafx.scene.control.ToggleGroup;
  *
  * @author Usuario
  */
-public class RegistroController implements Initializable {
+public class RegistroController{
 
     @FXML
     private TextField inputName;
@@ -32,13 +32,6 @@ public class RegistroController implements Initializable {
     private RadioButton academicoToggle;
     @FXML
     private RadioButton genioToggle;
-    /**
-     * Initializes the controller class.
-     */
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
 
     @FXML
     private void iniciar_juego(ActionEvent event) throws IOException {
@@ -50,8 +43,7 @@ public class RegistroController implements Initializable {
             String texto = inputName.getText();
             App.user.set_user_name(texto);
             System.out.println("Nombre del usuario: " + App.user.get_user_name());
-            App.setRoot("Preguntas");
+            App.setRoot("view/Preguntas");
         }
     }
-    
 }

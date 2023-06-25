@@ -16,16 +16,11 @@ import javafx.fxml.Initializable;
  *
  * @author Usuario
  */
-public class InstruccionesController implements Initializable{
-       
-     @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }  
-    
-     @FXML
-     void click_volver(ActionEvent event) throws IOException{
-        App.setRoot("Inicio");
+public class InstruccionesController {
+
+    @FXML
+    void click_volver(ActionEvent event) throws IOException {
+        App.setRoot("view/Inicio");
     }
-    
+
 }

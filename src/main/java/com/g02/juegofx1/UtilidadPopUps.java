@@ -56,10 +56,10 @@ public class UtilidadPopUps {
     }
 
     public static void showCorrectPopup() throws IOException {
-        showPopup("/com/g02/juegofx1/correctPopup.fxml");
+        showPopup("/com/g02/juegofx1/view/correctPopup.fxml");
     }
 
     public static void showIncorrectPopup() throws IOException {
-        showPopup("/com/g02/juegofx1/IncorrectPopup.fxml");
+        showPopup("/com/g02/juegofx1/view/IncorrectPopup.fxml");
     }
 }

@@ -125,7 +125,7 @@ public class PreguntasController implements Initializable {
             respuesta_4.setText(currQuestion.get_answers().get(3));
         } else {
             try {
-                App.setRoot("Final");
+                App.setRoot("view/Final");
             } catch (IOException ex) {
                 ex.printStackTrace();
             }
