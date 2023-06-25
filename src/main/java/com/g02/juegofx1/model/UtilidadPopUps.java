@@ -62,6 +62,6 @@ public class UtilidadPopUps {
     }
 
     public static void showIncorrectPopup() throws IOException {
-        showPopup("/com/g02/juegofx1/view/IncorrectPopup.fxml");
+        showPopup("/com/g02/juegofx1/view/incorrectPopup.fxml");
     }
 }
