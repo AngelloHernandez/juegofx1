@@ -1,6 +1,8 @@
-package com.g02.juegofx1;
+package com.g02.juegofx1.model;
 
 import java.io.IOException;
+
+import com.g02.juegofx1.App;
 
 import javafx.animation.PauseTransition;
 import javafx.fxml.FXMLLoader;

@@ -8,12 +8,14 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+import com.g02.juegofx1.model.User;
+
 /**
  * JavaFX App
  */
 public class App extends Application {
 
-    static Scene scene;
+    public static Scene scene;
     public static User user;
 
     @Override

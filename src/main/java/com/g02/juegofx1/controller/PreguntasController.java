@@ -9,9 +9,10 @@ import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
 import com.g02.juegofx1.App;
-import com.g02.juegofx1.Question;
-import com.g02.juegofx1.Quiz;
-import com.g02.juegofx1.UtilidadPopUps;
+import com.g02.juegofx1.model.Question;
+import com.g02.juegofx1.model.Quiz;
+import com.g02.juegofx1.model.UtilidadPopUps;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
